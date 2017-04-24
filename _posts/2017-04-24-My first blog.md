@@ -7,7 +7,7 @@ author:     licslan
 header-img: img/post-bg-ios9-web.jpg
 catalog: 	 true
 tags:
-    - blog
+    - 生活
 ---  
 
 
