@@ -40,7 +40,7 @@ header-img: "img/home-bg-o.jpg"
 
     <p>Hi, I am <strong>weilinhuang</strong>，you can call me <strong>LICSLAN</strong>. I'm an java Developer.I now working in wuhan noCompany</p>
 
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="##">Github·BY</a>.</p>
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub</p>
     
     <p>I am a sports enthusiast, I like basketball and American drama.</p>
 
@@ -98,22 +98,22 @@ header-img: "img/home-bg-o.jpg"
 
 {% if site.duoshuo_username %}
 <!-- 多说评论框 start -->
-<div class="comment">
-    <!-- This id is used for indexing my loss comments forcedly -->
+<!--<div class="comment">
+    This id is used for indexing my loss comments forcedly
     <div class="ds-thread"
     {% if site.duoshuo_username == "qiubaiying" %}
         data-thread-id="0ee040117ec56f17aa7e2523d1eae19b"
     {% else %}
-    <!-- U can just use this key generated to index comments at page about -->
+    U can just use this key generated to index comments at page about
         data-thread-key="{{site.duoshuo_username}}/about"
     {% endif %}
 
     data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div>
+    data-url="{{site.url}}/about/">
+</div>-->
 <!-- 多说评论框 end -->
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) 
 <script type="text/javascript">
     // dynamic User hacking by Hux
     var _user = '{{site.duoshuo_username}}';
@@ -129,7 +129,7 @@ header-img: "img/home-bg-o.jpg"
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- 多说公共JS代码 end -->
+多说公共JS代码 end -->
 {% endif %}
 
 
@@ -142,7 +142,7 @@ header-img: "img/home-bg-o.jpg"
 </div>
 <!-- disqus 评论框 end -->
 
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<!-- disqus 公共JS代码 start (一个网页只需插入一次)
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -155,5 +155,5 @@ header-img: "img/home-bg-o.jpg"
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<!-- disqus 公共JS代码 end -->
+ disqus 公共JS代码 end -->
 {% endif %}
