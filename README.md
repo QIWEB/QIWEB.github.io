@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BY Blog
 
 这个README我直接拿[Hux](https://github.com/Huxpro/huxpro.github.io)的来修改了。😅
@@ -252,3 +253,11 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 
 
 
+=======
+# licslan.github.io
+rebuild a blog for licslan 
+
+hello world  i`m licslan it`s my first to join this world 
+
+licslan is my friend thank for giving a chance to live in 
+>>>>>>> 81586c97373b7ee3d374d00ba5d1d1d11970dd24
