@@ -121,7 +121,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 #### Social-media Account
 
-在下面输入的社交账号，没有的不会显示在侧边框中（新加入了[简书](https:/www.jianshu.com)链接）
+在下面输入的社交账号，没有的不会显示在侧边框中（新加入了[简书](https:/www.jianshu.com)链接）https://www.jianshu.com/u/f6b148b4ad42
 
 	# SNS settings
 	RSS: false
