@@ -254,7 +254,7 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 ## 致谢
 
 1. 这个模板是从这里[Hux](https://github.com/Huxpro/huxpro.github.io) &
-    (https://github.com/qiubaiyu/qiubaiyu.github.io) fork 的。感谢这个作者 
+   [qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io) fork 的。感谢这些作者 
 2. 感谢 Jekyll、Github Pages 和 Bootstrap!
  
 
