@@ -93,7 +93,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "resume
+        title: "LICSLAN",
         href: "http://licslan.forexinterface.com/"
     },{
         title: "简书·BY",
