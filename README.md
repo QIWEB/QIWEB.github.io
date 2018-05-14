@@ -1,10 +1,15 @@
-<<<<<<< HEAD
-# BY Blog
+# BY Blog licslan.github.io
+rebuild a blog for licslan 
+hello world  i`m licslan it`s my first to join this world 
+licslan is my friend thank for giving a chance to live in
+
+
+
 
 这个README我直接拿[Hux](https://github.com/Huxpro/huxpro.github.io)的来修改了。😅
-### [我的博客在这里 &rarr;](http://qiubaiying.github.io)
+### [我的博客在这里 &rarr;](http://licslan.github.io)
 
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/readme-home.png)
 
 
 ## 使用
@@ -81,7 +86,7 @@ tags:
 #### 侧边栏
 
 看右边:
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-side.png)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/readme-side.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
@@ -139,7 +144,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 friends: [
     {
         title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
+        href: "https://licslan.github.io/"
     },
     {
         title: "Apple",
@@ -250,14 +255,5 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 
 1. 这个模板是从这里[Hux](https://github.com/Huxpro/huxpro.github.io) fork 的。感谢这个作者 
 2. 感谢 Jekyll、Github Pages 和 Bootstrap!
+ 
 
-
-
-=======
-# licslan.github.io
-rebuild a blog for licslan 
-
-hello world  i`m licslan it`s my first to join this world 
-
-licslan is my friend thank for giving a chance to live in 
->>>>>>> 81586c97373b7ee3d374d00ba5d1d1d11970dd24
