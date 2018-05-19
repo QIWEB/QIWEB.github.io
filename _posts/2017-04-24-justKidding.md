@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      尝试写着玩
+title:      尝试
 subtitle:   原来建一个blog真的可以这么简单
 date:       2017-04-24
 author:     licslan
