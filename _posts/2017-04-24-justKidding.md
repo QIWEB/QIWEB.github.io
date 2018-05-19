@@ -4,7 +4,7 @@ title:      尝试
 subtitle:   原来建一个blog真的可以这么简单
 date:       2017-04-24
 author:     licslan
-header-img: img/me.png
+header-img: img/zjm.jpg
 catalog: true
 tags:
     - justKidding  
