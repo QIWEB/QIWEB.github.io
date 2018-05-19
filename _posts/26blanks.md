@@ -1,0 +1,34 @@
+---
+layout:     post
+title:      wirte some thing you like most
+subtitle:   what will you write
+date:       2018-05-19
+author:     LICSLAN
+header-img: img/me.png
+catalog: true
+tags:
+    - life
+    - write something you like
+---
+
+ok next write something you like to do  (just can only input English word can not input chinese)
+
+1.read about 50 books a year
+
+2.watch movie with person you loved
+
+3.ride any bus go to anywhere you want to go or not to go just go around wuhan city
+
+4.go back your home when you are a child 
+
+5.go to see Tokyo Olympics  in 2020
+
+6.ride a bicycle from wuhan city to your home
+
+7.speak english with Foreigner in english
+
+8.with my parents and take them go to wuhan city have a look around just walk with them
+
+9.thanks person who are helped with you in once ,i have watch a movie <pay it forward> 
+
+10.to be continued when you think of something you want to do 
