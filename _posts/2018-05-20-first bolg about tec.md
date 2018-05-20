@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      let`s monitor the jvm by using VisualVM.exe to accesss the remote service
+title:      let`s monitor the jvm by using VisualVM.exe to access the remote service
 subtitle:   jvm tomcat java
 date:       2018-05-29
 author:     LICSLAN
