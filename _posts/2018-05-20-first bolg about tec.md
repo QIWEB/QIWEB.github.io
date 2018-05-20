@@ -17,3 +17,13 @@ ok next write something about how to connect the remote server and monitor the c
 blow the picture is about jvm 
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jvm.png)
+
+if you want to see the picture like upon , so there something you should prepare for it 
+
+install VM(virtual machine) in your computer then install linux os such as centos7 & ubantu etc
+
+before connect to the local server & remote server plz make sure you set the right environment like bolw setps 
+
+1. set the jdk Environment variables (plz www.baidu.com )  if it is work right  you will see like this  (java -version)
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jdk.jpg)
