@@ -14,9 +14,13 @@ tags:
 
 ok next write something about how to connect the remote server and monitor the cpu & memory & GC 
 
-blow the picture is about jvm 
+blow the picture is about jvm & GC
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jvm.png)
+
+<br>
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/GC.png)
 
 if you want to see the picture like upon , so there something you should prepare for it 
 
