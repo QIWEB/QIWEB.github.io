@@ -104,7 +104,7 @@ of course if your ip is not local ip (LAN IP --> local area network such as 192.
 
 setting the security group open port jsut like me using aliyun server (see the picture like blow) and 
 
-setting firwall as well before
+setting firewall as well before
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/aliyun.jpg)
 
