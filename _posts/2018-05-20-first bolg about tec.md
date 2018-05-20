@@ -72,6 +72,56 @@ then will show up the reslut just like upon the first picture
 
 3.connect to server or jar using jmx 
 
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jmx1.jpg)
+
+<br>
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jmx2.jpg)
+
+cd /your/tomcat/bin/  and  vim catalina.sh
+
+and put code like: 
+
+CATALINA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote 
+                       -Dcom.sun.management.jmxremote.port=9010
+                       -Dcom.sun.management.jmxremote.authenticate=false
+                       -Dcom.sun.management.jmxremote.ssl=false
+                       -Djava.rmi.server.hostname=192.168.0.149"
+
+export CATALINA_OPTS
+
+then :wq exit 
+
+ok now you can set the firewall just like upon 
+
+firewall-cmd --zone=public --add-port=9010/tcp --permanent
+
+firewall-cmd --zone=public --add-port=30000-65000/tcp --permanent
+
+firewall-cmd --reload
+
+then you can go to the visualVm to add jmx connection and input your remote ip and port
+
+of course if your ip is local ip (LAN IP --> local area network such as 192.168.0.XXX) you also should setting the
+
+security group open port  jsut like me using aliyun server (see the picture like blow)
+
+<br>
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/aliyun.jpg)
+
+ok this id to be done if you are doing like upon steps and you will success and see the picture of first
+
+thanks guys  it is my first tec blog about how to monitor the jvm by using VisualVM.exe to accesss the remote service
+
+ok if you have any problmes welcome send email to licslan@sina.com we can study together and discuss the problem to slove them
+
+best wish to all of you guys 
+
+
+
+
+
 
 
 
