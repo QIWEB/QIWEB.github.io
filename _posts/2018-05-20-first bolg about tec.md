@@ -42,10 +42,13 @@ wirte something like : grant codebase "file:${java.home}/../lib/tools.jar" {perm
 
 check your hostname -i is your linux·s ip instead of 127.0.0.1 picture like blow if not your linuxs ip(192.168.0.149 or remote server 
 
-ip) then you can vim /etc/hosts update the setting  
+ip) then you can vim /etc/hosts update the setting 
+
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hostnamei.jpg)
 
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hosts.jpg)
 
  
 then start it like : 
