@@ -100,9 +100,11 @@ firewall-cmd --reload
 
 then you can go to the visualVm to add jmx connection and input your remote ip and port
 
-of course if your ip is local ip (LAN IP --> local area network such as 192.168.0.XXX) you also should setting the
+of course if your ip is not local ip (LAN IP --> local area network such as 192.168.0.XXX) you also should 
 
-security group open port  jsut like me using aliyun server (see the picture like blow)
+setting the security group open port jsut like me using aliyun server (see the picture like blow) and 
+
+setting firwall as well before
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/aliyun.jpg)
 
