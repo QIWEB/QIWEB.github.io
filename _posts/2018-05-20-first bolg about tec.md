@@ -40,10 +40,9 @@ cd /your/jdk/bin/  and  vim jstatd.all.policy
 
 wirte something like : grant codebase "file:${java.home}/../lib/tools.jar" {permission java.security.AllPermission;};
 
-check your hostname -i is your linux·s ip instead of 127.0.0.1 picture like blow if not your linuxs ip(192.168.0.149 or remote server 
+check your hostname -i is your linux·s ip instead of 127.0.0.1 picture like blow 
 
-ip) then you can vim /etc/hosts update the setting 
-
+if not your linuxs ip (192.168.0.149 or remote server ip) then you can vim /etc/hosts update the setting 
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hostnamei.jpg)
 
@@ -51,7 +50,6 @@ ip) then you can vim /etc/hosts update the setting
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hosts.jpg)
 
- 
 then start it like : 
 
 jstatd -J-Djava.security.policy=jstatd.all.policy -J-Djava.rmi.server.hostname=192.168.0.149(or your remote server ip) &
