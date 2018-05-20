@@ -24,6 +24,8 @@ install VM(virtual machine) in your computer then install linux os such as cento
 
 before connect to the local server & remote server plz make sure you set the right environment like bolw setps 
 
-1. set the jdk Environment variables [plz baidu yiha &rarr;](www.baidu.com) if it is work right  you will see like this  (java -version)
+1. set the jdk Environment variables [plz baidu yiha &rarr;](https://www.baidu.com/) if it is work right  you will see like this  (java -
+
+version)
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jdk.jpg)
