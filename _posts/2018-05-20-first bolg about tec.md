@@ -47,19 +47,22 @@ ip) then you can vim /etc/hosts update the setting
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hostnamei.jpg)
 
+<br>
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/hosts.jpg)
 
  
 then start it like : 
 
-jstatd -J-Djava.security.policy=jstatd.all.policy -J-Djava.rmi.server.hostname=192.168.0.149(or your remoter server ip) &
+jstatd -J-Djava.security.policy=jstatd.all.policy -J-Djava.rmi.server.hostname=192.168.0.149(or your remote server ip) &
 
 lsof -i:1099(deafault port for jstatd connection)
 
-of courese you should set the firewall and open the port such as 1099 commond like :firewall-cmd --zone=public --add-port=1099/tcp --
+of courese you should set the firewall and open the port such as 1099 
 
-permanent   later commond like : firewall-cmd --reload make it work right
+commond like :firewall-cmd --zone=public --add-port=1099/tcp --permanent   
+
+later commond like : firewall-cmd --reload make it work right
 
 ok now you just double click the visualvm.exe and add remote host input your ip address 
 
