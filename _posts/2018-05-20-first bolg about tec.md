@@ -73,9 +73,7 @@ then will show up the reslut just like upon the first picture
 3.connect to server or jar using jmx 
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jmx1.jpg)
-
 <br>
-
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/jmx2.jpg)
 
 cd /your/tomcat/bin/  and  vim catalina.sh
@@ -106,11 +104,9 @@ of course if your ip is local ip (LAN IP --> local area network such as 192.168.
 
 security group open port  jsut like me using aliyun server (see the picture like blow)
 
-<br>
-
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/aliyun.jpg)
 
-ok this id to be done if you are doing like upon steps and you will success and see the picture of first
+ok this is to be done if you are doing like upon steps and you will success and see the picture of the first
 
 thanks guys  it is my first tec blog about how to monitor the jvm by using VisualVM.exe to accesss the remote service
 
