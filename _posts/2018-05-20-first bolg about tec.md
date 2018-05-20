@@ -48,7 +48,9 @@ ip) then you can vim /etc/hosts update the setting
 
 
  
-then start it like : jstatd -J-Djava.security.policy=jstatd.all.policy -J-Djava.rmi.server.hostname=192.168.0.149(or your remoter server ip) &
+then start it like : 
+
+jstatd -J-Djava.security.policy=jstatd.all.policy -J-Djava.rmi.server.hostname=192.168.0.149(or your remoter server ip) &
 
 lsof -i:1099(deafault port for jstatd connection)
 
