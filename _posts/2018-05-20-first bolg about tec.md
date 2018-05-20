@@ -20,7 +20,7 @@ blow the picture is about jvm & GC
 
 <br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/GC.png)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/gc.jpg)
 
 if you want to see the picture like upon , so there something you should prepare for it 
 
