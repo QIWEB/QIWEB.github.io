@@ -14,8 +14,6 @@ tags:
 
 Happy children's day !! I want go back to 90's if i can <br>
 
-ok let's get to the right point 
-
 blow the picture is about git gogs server
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs1.jpg)<br><br>
@@ -40,7 +38,7 @@ before you start building gogs server plz make sure you have already installed m
 
 plz see my another blog about how to install mariadb server on linux os<br>
 
-ok  let's to right point start installing gogs server<br>
+ok let's get to the right point and start installing gogs server<br>
 
 The installation process is as follows<br>
 
