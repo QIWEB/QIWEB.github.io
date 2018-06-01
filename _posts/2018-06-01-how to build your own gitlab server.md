@@ -50,9 +50,6 @@ Note that by default you have already installed MySQL server (or MariaDB) and ng
 
 find out how to install and configure these dependencies. Of course, you can also use the SQLite db.<br>
 
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
-
 next we use centos7 as project envirment <br>
 
 【add user】 : useradd git   ------->   sudo su git <br> 
@@ -75,17 +72,17 @@ in scripts/mysql.sql  ------> mysql -u root -p < scripts/mysql.sql   (Requires a
 
 Then log in to MySQL to create a new user, gogs, and give the user all rights to the database gogs. commond as blow<br>
 
-$ mysql -u root -p<br>
+ $ mysql -u root -p  -------><br> 
 
-> （输入密码）<br>
+（输入密码）-------> <br>
 
-> create user 'gogs'@'localhost' identified by '密码';<br>
+ create user 'gogs'@'localhost' identified by '密码'; -------><br>
 
-> grant all privileges on gogs.* to 'gogs'@'localhost';<br>
+ grant all privileges on gogs.* to 'gogs'@'localhost'; -------><br>
 
-> flush privileges;<br>
+ flush privileges;-------><br>
 
-> exit;<br>
+ exit;<br>
 
 Run 【./gogs web】 to get Gogs up and go to http://server IP:3000/ to install it. Fill in the form and submit it.<br>
 
@@ -131,7 +128,7 @@ Among them, Mailer can use Mailgun's free e-mail service to fill Mailgun's SMTP 
 
 nohup ./gogs web & <br>
 
-# ok These are the things I want to talk about R U Got it ? have any problems plz contract licslan@sina.com
+# ok These are the things I want to talk about R U Got it ?  # have any problems plz contract licslan@sina.com
 
 
 
