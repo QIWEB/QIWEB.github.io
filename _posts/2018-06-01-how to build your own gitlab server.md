@@ -16,6 +16,16 @@ Happy children's day !! I want go back to 90's if i can <br>
 
 ok let's get to the right point 
 
+blow the picture is about git gogs server
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/gogs1.jpg)
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/gogs2.jpg)<br>
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/gogs3.jpg)
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/img/gogs4.jpg)<br>
+
 next i will intorduce how to use git commod <br>
 
 of course it's sort of base commod such as you can download code or file from your server<br>
