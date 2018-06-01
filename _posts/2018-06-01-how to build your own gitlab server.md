@@ -77,7 +77,7 @@ Then log in to MySQL to create a new user, gogs, and give the user all rights to
 
 $ mysql -u root -p<br>
 
-> # （输入密码）<br>
+> （输入密码）<br>
 
 > create user 'gogs'@'localhost' identified by '密码';<br>
 
@@ -129,11 +129,9 @@ Among them, Mailer can use Mailgun's free e-mail service to fill Mailgun's SMTP 
 
 【Keep the service running】<br>
 
-nohup ./gogs web & 
+nohup ./gogs web & <br>
+
+# ok These are the things I want to talk about R U Got it ? have any problems plz contract licslan@sina.com
 
 
-<h2>ok These are the things I want to talk about R U Got it ?<h2>
 
-
-
-to be continued。。。
