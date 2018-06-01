@@ -16,13 +16,15 @@ Happy children's day !! I want go back to 90's if i can <br>
 
 blow the picture is about git gogs server
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs1.jpg)<br><br>
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs5.jpg)<br><br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs2.jpg)<br><br>
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs4.jpg)<br><br>
 
 ![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs3.jpg)<br><br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs4.jpg)<br><br>
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs2.jpg)<br><br>
+
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs1.jpg)<br><br>
 
 next i will intorduce how to use git commod <br>
 
