@@ -18,13 +18,13 @@ ok let's get to the right point
 
 blow the picture is about git gogs server
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs1.jpg)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs1.jpg)<br><br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs2.jpg)<br>
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs2.jpg)<br><br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs3.jpg)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs3.jpg)<br><br>
 
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs4.jpg)<br>
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/gogs4.jpg)<br><br>
 
 next i will intorduce how to use git commod <br>
 
