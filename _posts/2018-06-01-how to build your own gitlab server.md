@@ -46,8 +46,8 @@ The installation process is as follows<br>
 
 6.Keep the service running;<br>
 
-Note that by default you have already installed MySQL server (or MariaDB) and nginx. If not, find out how to install and configure these 
+Note that by default you have already installed MySQL server (or MariaDB) and nginx. If not, <br>
 
-dependencies. Of course, you can also use the SQLite database.<br>
+find out how to install and configure these dependencies. Of course, you can also use the SQLite database.<br>
 
 to be continued。。。
