@@ -73,3 +73,11 @@ webapps下的ROOT下面（删除tomcat webapps目录下ROOT原有内容），<br
 mvn package -Dmaven.test.skip=true<br>
 #移除防火墙端口<br>
 firewall-cmd --zone=public --remove-port=30000-40000/tcp --permanent<br>
+cat catalina.out |grep "MessageBrokerImpl save message succeeded"
+ps -ef|grep tomcat
+find / -name ""
+rz (上传) sz （下载）
+cp -r /test /xx
+mv filename /xx
+mv filename anotherfilename
+
