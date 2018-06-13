@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      start with nginx server to proxy your server
+title:      start with nginx to proxy your server
 subtitle:   nginx Reverse proxy
 date:       2018-06-13
 author:     LICSLAN
@@ -11,7 +11,7 @@ tags:
      - nginx
 ---
 
-OK let's start with nginx server to proxy your server <br>
+OK let's using nginx to proxy your server <br>
 
 nginx is very popular proxy server , most companies are using this server to proxy their application, <br>
 
