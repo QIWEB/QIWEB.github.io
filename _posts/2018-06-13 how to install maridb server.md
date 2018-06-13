@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      how to install mariadb(mysql) server
@@ -8,8 +7,8 @@ author:     LICSLAN
 header-img: img/zjm.jpg
 catalog: true
 tags:
-    - tec
-    - about databases SQL
+     - tec
+
 ---
 
 
@@ -21,7 +20,7 @@ next i will use chinese to describe how to build your own mariadb server<br>
 安装命令<br>
 yum -y install mariadb mariadb-server
 卸载数据库：<br>
-[root@localhost logs]# yum -y remove mari*
+root@localhost logs# yum -y remove mari*
 安装完成MariaDB，首先启动MariaDB<br>
 systemctl start mariadb
 设置开机启动<br>
