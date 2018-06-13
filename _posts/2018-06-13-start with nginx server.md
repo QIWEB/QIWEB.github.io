@@ -80,7 +80,7 @@ next look how to Setting up the configuration file---------------- nginx.conf <b
 cd /test/nginx/nginxStart/conf <br>
 vim nginx.conf <br>
 you wii see <br>
-![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/dbsql.png)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/nginx.png)
 
 
 
