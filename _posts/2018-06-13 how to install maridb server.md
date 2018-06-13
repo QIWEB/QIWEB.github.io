@@ -8,7 +8,7 @@ header-img: img/zjm.jpg
 catalog: true
 tags:
      - tec
-
+     - sql databases
 ---
 
 
@@ -63,28 +63,7 @@ systemctl restart mariadb<br>
 mysql> show variables like "%character%";show variables like "%collation%";<br>
 显示为<br>
 
-+--------------------------+----------------------------+
-| Variable_name            | Value                      |
-+--------------------------+----------------------------+
-| character_set_client    | utf8                      |
-| character_set_connection | utf8                      |
-| character_set_database  | utf8                      |
-| character_set_filesystem | binary                    |
-| character_set_results    | utf8                      |
-| character_set_server    | utf8                      |
-| character_set_system    | utf8                      |
-| character_sets_dir      | /usr/share/mysql/charsets/ |
-+--------------------------+----------------------------+
-8 rows in set (0.00 sec)
-
-+----------------------+-----------------+
-| Variable_name        | Value          |
-+----------------------+-----------------+
-| collation_connection | utf8_unicode_ci |
-| collation_database  | utf8_unicode_ci |
-| collation_server    | utf8_unicode_ci |
-+----------------------+-----------------+
-3 rows in set (0.00 sec)
+![](https://raw.githubusercontent.com/licslan/licslan.github.io/master/dbsql.png)
 
 字符集配置完成。<br>
 
