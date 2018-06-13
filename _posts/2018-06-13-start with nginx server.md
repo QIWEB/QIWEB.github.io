@@ -37,11 +37,11 @@ cd /test/nginx<br>
 
 5.or custom configuration (not recommended) so let's use custom configuration<br>
 
-6./configure 
-  --prefix=/test/nginx/nginxStart<br>
+6./configure --prefix=/test/nginx/nginxStart<br>
+
 7.make && make install<br>
 
-8 start or stop nginx server<br>
+8.start or stop nginx server<br>
 启动、停止nginx<br>
 cd /test/nginx/nginxStart/sbin/<br>
 ./nginx <br>
