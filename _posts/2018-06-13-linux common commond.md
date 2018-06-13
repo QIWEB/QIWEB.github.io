@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      how to install mariadb(mysql) server
-subtitle:   SQL MYSQL mariadb 
+title:      linux common commond
+subtitle:   linux shell
 date:       2018-06-13
 author:     LICSLAN
 header-img: img/zjm.jpg
 catalog: true
 tags:
      - tec
-     - sql databases
+     - linux
 ---
 
 
