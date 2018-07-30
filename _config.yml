@@ -1,13 +1,13 @@
 # Site settings
 title: QIWEB Blog
 SEOTitle: Pandas burning incense | Qiweb`S Blog
-header-img: img/zjm.jpg
+header-img: img/xiongmao.jpg
 email: zqijava@163.com
 description: "I still have lots more to work on!"
-keyword: "licslan, licslan Blog, licslan的博客, licslan, java, iOS, Apple, iPhone"
+keyword: "qiweb, qiweb Blog, qiweb的博客, qiweb, java, iOS, Apple, iPhone"
 url: "http://licslan.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/licslan/licslan.github.io.git" # you code repository
+github_repo: "https://github.com/QIWEB/QIWEB.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -21,14 +21,14 @@ RSS: false
 
 github_username:    QIWEB
 
-jianshu_username:   f6b148b4ad42
+jianshu_username:   qiweb
 
 
 
 
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+# from 2018, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
 paginate: 10
