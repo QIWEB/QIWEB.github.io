@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<title>随机</title>
+
+
+<body>
+<div id="msg" ></div>
+<iframe id=myif src="https://www.12av.cc//Static/Home/VideoJS/?Play=https://videomy.yongaomy.com/20191207/FCfJ7nyf/index2.m3u8" scrolling="no" width="100%" height="700" frameborder="0"></iframe>
+</body>
+<script>
+//http://m3u8.looks.wang/?play=https://xiaohuangshu.me/videos/600816a08a62a/720.m3u8
+
+//https://xiaohuangshu.me/m3u8.php?id=60be18a61bb0c
+//https://xiaohuangshu.me/videos/600816a08a62a/720_001.ts
+//https://xiaohuangshu.me/videos/600816a08a62a/720.m3u8
+var JSONX = [{
+    "Caption": "CCTV5体育HD",   
+    "HlsUrl": "http://223.110.245.136/PLTV/3/224/3221227166/index.m3u8"
+},
+{
+    "Caption": "CCTV8电视剧HD",   
+    "HlsUrl": "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221227204/index.m3u8"
+},{
+    "Caption": "CCTV5体育HD",   
+    "HlsUrl": "http://223.110.245.136/PLTV/3/224/3221227166/index.m3u8"
+},{
+    "Caption": "CCTV1综合HD",   
+    "HlsUrl": "http://223.110.243.170/PLTV/3/224/3221226316/index.m3u8"
+},{
+    "Caption": "CCTV-02 财经,",   
+    "HlsUrl": "http://223.110.243.172/PLTV/3/224/3221227207/index.m3u8"
+},{
+    "Caption": "CCTV-05 体育,",   
+    "HlsUrl": "http://223.110.245.139:80/PLTV/4/224/3221227298/index.m3u8"
+},{
+    "Caption": "CCTV-06 电影",   
+    "HlsUrl": "http://223.110.245.172/PLTV/3/224/3221225548/index.m3u8"
+},{
+    "Caption": "CCTV-06 高清",   
+    "HlsUrl": "http://223.110.243.139/PLTV/3/224/3221225548/index.m3u8"
+},{
+    "Caption": "CCTV-09 记录,",   
+    "HlsUrl": "http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225868/index.m3u8"
+},{
+    "Caption": "CCTV-10 科教,",   
+    "HlsUrl": "http://223.110.245.170/PLTV/3/224/3221225550/index.m3u8"
+},{
+    "Caption": "CCTV-11 标清,",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-11/1.m3u8"
+},{
+    "Caption": "CCTV-12社会与法,",   
+    "HlsUrl": "http://223.110.245.170/PLTV/3/224/3221225556/index.m3u8"
+},
+
+{
+    "Caption": "CCTV-7",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-7/1.m3u8"
+},
+{
+    "Caption": "CCTV-8",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-8/1.m3u8"
+},
+{
+    "Caption": "CCTV-9",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-9/1.m3u8"
+},
+{
+    "Caption": "CCTV-10",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-10/1.m3u8"
+},
+{
+    "Caption": "CCTV-11",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-11/1.m3u8"
+},
+{
+    "Caption": "CCTV-12",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-12/1.m3u8"
+},
+{
+    "Caption": "CCTV-13",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-13/1.m3u8"
+},
+{
+    "Caption": "CCTV-14",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-14/1.m3u8"
+},
+{
+    "Caption": "CCTV-15",   
+    "HlsUrl": "http://223.82.250.72/live/cctv-15/1.m3u8"
+}];
+//https://xchina.club/upload/video/6027a30772774.jpg
+// max - 期望的最大值
+i = parseInt(Math.random() * (JSONX.length + 1), 10);
+//alert(i)
+
+document.title =JSONX[i].Caption;
+urlx="https://xiaohuangshu.me/videos/600816a08a62a/720.m3u8";
+
+//urlx=urlx.replace('600816a08a62a',JSONX[i].HlsUrl);
+urlx=JSONX[i].HlsUrl;
+//urlx="http://60.251.59.179:8503/xoxo.m3u8"
+document.getElementById("myif").src="https://www.12av.cc//Static/Home/VideoJS/?Play="+JSONX[i].HlsUrl;
+
+document.getElementById("msg").innerHTML=JSONX[i].HlsUrl;
+</script>
+
+
+
+
+
+</html>

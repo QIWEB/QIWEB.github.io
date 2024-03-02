@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<title>随机</title>
+
+
+<body>
+<div id="msg" ></div>
+<iframe id=myif src="" scrolling="no" width="100%" height="700" frameborder="0"></iframe>
+</body>
+<script>
+
+
+//https://xiaohuangshu.me/m3u8.php?id=60be18a61bb0c
+//https://xiaohuangshu.me/videos/600816a08a62a/720_001.ts
+//https://xiaohuangshu.me/videos/600816a08a62a/720.m3u8
+var JSONX = [
+{"id":"https://mp.weixin.qq.com/s/9_9GtGko5fryGw0jUR2fVw","uhref":" 最新win11专业版和 office2021激活密钥永久激活码神KEY大全（100%有效激活）分享 MHRK6-PHGH4-B                                 "}
+,{"id":"https://mp.weixin.qq.com/s/AeDtxGr3uhDSjCWKca4-uA","uhref":" 最新windows10和 office2021激活密钥永久激活码神KEY大全（100%有效免费激活）by qiweb3 分享                                   "}
+,{"id":"https://mp.weixin.qq.com/s/yDXhp4yoqPh3s-NF_BwTCg","uhref":" 12月最新一期！再给大家分享几个亲测可用的win10系统专业版激活码密钥，永久激活，拿走不谢！还有office 正规密钥                "}
+,{"id":"https://mp.weixin.qq.com/s/iPCln4zVGSAWA2TX2Jxj3g","uhref":" 双旦发福利，Win10正式版怎么备份或还原系统.附永久激活码，密钥多枚win10专业版密钥:XWHF9-NJ9MR-7KKR3-                        "}
+,{"id":"https://mp.weixin.qq.com/s/ezTxnenMzmC3j69hDB84pA","uhref":" office2019专业增强版激活码和office2021密钥以及office365订阅账号，win10或者macos通用                                       "}
+,{"id":"https://mp.weixin.qq.com/s/R9Tfcmvha0ZJLIWZ3xhp1A","uhref":" 1217再给大家分享几个亲测可用的win10系统激活码密钥，拿走不谢！很多同学都遇到过“windows10许可证即将过期”的提示              "}
+,{"id":"https://mp.weixin.qq.com/s/NwRV9dTIrihZPvhqy4KjHA","uhref":" 双十二免费分享Microsoft office产品密钥大全，win10激活步骤开始_设置-更新和安全_激活】点击更改产品密钥各版                  "}
+,{"id":"https://mp.weixin.qq.com/s/BHeZkEC0yCaxHrlRWSMPnQ","uhref":" 2021最新windows10激活密钥永久激活码神KEY大全（100%有效免费激活）                                                          "}
+,{"id":"https://mp.weixin.qq.com/s/iKUBRmvuYi9gtxK_eXK3Aw","uhref":" 12周末福利大放送，最近需要Windows10产品密钥和office2019 365永久激活                                                       "}
+,{"id":"https://mp.weixin.qq.com/s/bBb2TWYfz6yB-laiHIuNRw","uhref":" 12月最新一期！再给大家免费分享几个亲测可用的win10系统专业版激活码密钥，永久激活，拿走不谢！还有office                     "}
+,{"id":"https://mp.weixin.qq.com/s/EGr7SyD_pPWN-LBlfywnhA","uhref":" 爱分享12月1新的开始，加油吧，给白嫖党送温暖，windows激活码牵着office2019的小手走来了，不多30个微软产品密钥                "}
+,{"id":"https://mp.weixin.qq.com/s/PW9YlpJvFRKfwLN8VR4Gfg","uhref":" 11月第三次再给大家分享几个亲测可用的office专业增强版激活码密钥，拿走不谢！很多同学都遇到过“wrod许可未激活”功能限制        "}
+,{"id":"https://mp.weixin.qq.com/s/leeYRxvPWDOSawyHCxw8UA","uhref":" 11月再给大家分享20枚win10系统激活码密钥，亲测可永久激活。告别“windows10许可证即将过期”的提示，安全上网，真香              "}
+,{"id":"https://mp.weixin.qq.com/s/8D6xhRCxlAZr7xNzn_Cu9w","uhref":" windows系统维护福音在线工具包是一款多功能的工具箱Cencrack，收集了很多很多绿色软件工具，还有破解工具！                     "}
+,{"id":"https://mp.weixin.qq.com/s/sy_Pxeocm416ICDK3dVBjQ","uhref":" win10提速_顶级重复文件搜索工具Duplicate Cleaner版V4完美注册版查找重复文件的内容，快！电脑清理垃圾神                       "}
+,{"id":"https://mp.weixin.qq.com/s/rvgFXMr3TJX4zJzIuAiXSg","uhref":" 6个堪称神器的良心工具，个个都值得你收藏                                                                                   "}
+,{"id":"https://mp.weixin.qq.com/s/HDYDT0kfiD2w14_dH0ZLXA","uhref":" Windows系统平台——多功能检测工具箱是一款功能非常齐全的专业系统维护工具20211117                                             "}
+,{"id":"https://mp.weixin.qq.com/s/eQbeCHHqciS2-4plWxk4vQ","uhref":" 【新惊艳】微软这款全新系统名为win11 SE，基于windows 11，主要是面向教育市场,仅支持低端处理器                               "}
+,{"id":"https://mp.weixin.qq.com/s/C4EttS5Ddvy5JLUPijxZ-Q","uhref":" Win10系统激活机制的不断升级，通过非正常手段激活的方法都已经失效，现在激活最重要的是找到合适的密钥，11月再给大家分享几亲测 "}
+,{"id":"https://mp.weixin.qq.com/s/IusYPZfLF-PRCdBybwhnlQ","uhref":" 电脑办公必备画图软件visio正式版是一款功能强大的图形方案制作软件。附官方下载地址——产品密钥                                 "}
+,{"id":"https://mp.weixin.qq.com/s/nzuMLn-ePbgvmdGJlRM26A","uhref":" 11月再给大家分享几个亲测可用的office专业增强版激活码密钥，拿走不谢！很多同学都遇到过“wrod许可未激活”功能限制              "}
+,{"id":"https://mp.weixin.qq.com/s/5HwtXi_WkX3zt4jYozzhDg","uhref":" 【全新测评office2021】微软Office 2021官方正式版终于来了！经测试，启动速度更快，修改了启动界面、重新绘制部分               "}
+,{"id":"https://mp.weixin.qq.com/s/LWBle2GncZB5Xjfbe3VEsA","uhref":" 一键搞定！办公软件Office Uninstall - 一个可以从电脑上完全卸载微软Office所有版本产品的工具。                               "}
+,{"id":"https://mp.weixin.qq.com/s/b7jcHjLAdcEQ5v5sIrWtVA","uhref":" 再给大家分享几个亲测可用的win10系统专业版激活码密钥，拿走不谢！很多同学都遇到过“windows10许可证即将过期”的提示            "}
+,{"id":"https://mp.weixin.qq.com/s/2RiTnLOnk-c6nsY8milyIQ","uhref":" 【对比】微软正版365值得吗 oOffice2019 vs Office365，哪一个办公软件值得拥有，你研究过吗 ？激活账号                         "}
+,{"id":"https://mp.weixin.qq.com/s/J_o5Yed4_xdNcKMJzWNVJw","uhref":" 20211026今日分享微软windows10激活码，一次分享免费发放50枚win10专业版，家庭版永久激活，亲测有效                            "}
+,{"id":"https://mp.weixin.qq.com/s/8HEvM-6Ib0T6VCJYkos_LQ","uhref":" 小白级教程！教你在Windows 11玩转安卓APP在电脑上安装手机抖音，头条，微信，电视，小白也可以15分钟上手                       "}
+,{"id":"https://mp.weixin.qq.com/s/Lv7OY6sdshMC5gYqQcnU9Q","uhref":" win11下载微软官方地址使用迅雷快速下载Windows11系统可以运行apk安卓应用 附安装教程+迅雷不限速版 win10升级                   "}
+,{"id":"https://mp.weixin.qq.com/s/f5sf3-8-JIXbubjoOQdn0A","uhref":" 务必收藏！微软官方！激活office2019，附永久激活码，亲测还有效                                                              "}
+,{"id":"https://mp.weixin.qq.com/s/dPT8KQfyw5q4sFnDB3qUXw","uhref":" Office 2021将和Win11正式版一起推出 新功能一览。黄金搭档它们来了                                                           "}
+,{"id":"https://mp.weixin.qq.com/s/0GPe4dCjgoiK3lXpaBF2Ng","uhref":" 注意，这些win10版本将停止更新！微软提醒用户尽快升级                                                                       "}
+,{"id":"https://mp.weixin.qq.com/s/sOZ1SYRgpPuMFws4WzfVvQ","uhref":" Win11 已正式发布，但微软确认还将推出 Win10 21H2 系统                                                                      "}
+,{"id":"https://mp.weixin.qq.com/s/rIXMDrnSyImDG075XbwNWQ","uhref":" 安卓手机投屏到win10电脑无需安装任何软件（电脑和手机必须连接同一网络或者wifi）【投影到此电脑灰色无法操作怎么办？】         "}
+,{"id":"https://mp.weixin.qq.com/s/4qrpK6jYOnMrXdKCGO1MUw","uhref":" 本月第三次分享，解锁全部高级功能，win10系统+office2019办公软件永久激活密钥。安全快速无忧                                  "}
+,{"id":"https://mp.weixin.qq.com/s/LafjxnjTvfv23Z4vW16LDg","uhref":" Windows系统和Office的VL版本是什么意思有什么区别？                                                                         "}
+,{"id":"https://mp.weixin.qq.com/s/1EIllafZQmn-GZmcsk0o-w","uhref":" 微软官方系统，最新一期永久激活码windows10系统产品密钥，还有office专业版和visio专业版等，陆续到货了，会陆续赠              "}
+,{"id":"https://mp.weixin.qq.com/s/HlFWW8EjeE_zdzJo0PrF5w","uhref":" 很多同学都遇到过“windows10许可证即将过期”的提示，其实这是你的电脑没有及时激活才会出现的。系统激活码密钥分享它来了         "}
+,{"id":"https://mp.weixin.qq.com/s/eL-Z0TzETizISggB8nJwwQ","uhref":" 它真来了——管理必备project和visio微软办公office2019套件永久激活密钥分享一波                                                "}
+,{"id":"https://mp.weixin.qq.com/s/hB3qDeHYUis50cAAY9XP9w","uhref":" 好马配好鞍，买电脑一定要安装微软office。苹果版还是win10版。永久激活才是王道                                               "}
+,{"id":"https://mp.weixin.qq.com/s/triv9iZksnHd_4Ny70aFiw","uhref":" 微软系统从1.0到win10系统的开机和关机音效，你听过几个？                                                                    "}
+,{"id":"https://mp.weixin.qq.com/s/k7_i6HTpayDLuHEN1f_tpA","uhref":" Office 2019安装教程和激活方法(附微软官方远程下载)。亲测可用永久密钥激活码3枚，拒绝工具激活                                "}
+,{"id":"https://mp.weixin.qq.com/s/yXvZFoYT0lSoc0lygc60mg","uhref":" 盗版office软件对用户的危害到底有多大大？你可知否？?病毒，泄露隐私。真后悔看完了附永久激活码                               "}
+,{"id":"https://mp.weixin.qq.com/s/CIGOenzWrsM1b8vMdLjd2w","uhref":" 5月12日熊猫密钥win8.1专业零售版永久激活码密钥N枚免费送                                                                    "}
+
+];
+//https://xchina.club/upload/video/6027a30772774.jpg
+// max - 期望的最大值
+i = parseInt(Math.random() * (43 + 1), 10);
+//alert(i)
+//alert(JSONX[i].uhref);
+window.location.href=JSONX[i].id;
+document.title =JSONX[i].uhref;
+
+document.getElementById("myif").src=JSONX[i].id;
+</script>
+
+
+
+
+
+</html>
