@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+		</head>
+  <script type="text/javascript">		
+  	
+  	function go(){
+  		var arr = ['good', 'good', 'study'];
+				arr =  ['徐海洋','谢皓','付静','包帅兵','陈志杰','黄坤','张志晖','王小涛','李诗琦','侯海欧'
+			,'夏阳','雷勇','窦娜','李新华','杨荣','冯洪辉','赵熙','陈可','朱天鸿','徐俊岭',
+			'林杰','鲍俊男','吴玉虹','惠凌峰','徐锐','闫鹏','张奇','刘淼森','侯启志','夏艳伟','魏傲','苏宣萁','龙亦文','周航'];
+
+
+			var rs=document.getElementById("inputtext").value;
+			console.warn("粘贴板内容:"+rs)
+			var resp="未接龙："
+			var respnNum=0;
+			var respok="已接龙："
+			var respnokNum=0;
+			for (var i = 0; i< arr.length; i++) {
+			    console.error(rs.indexOf(arr[i]));
+			    if(rs.indexOf(arr[i])==-1){
+			        console.log(i+arr[i]);
+			        resp=resp+"@"+arr[i]+" ";
+			        respnNum=respnNum+1;
+			    }else{
+			    	  respok=respok+arr[i]+" ";
+			    	  respnokNum=respnokNum+1;
+			    }
+    
+			};
+			console.error("未接龙"+resp);
+			
+			document.getElementById("outputtext").value=resp+"共"+respnNum+"人。\n\n"+respok+"共"+respnokNum+"人。\n\n";
+			//setClip(resp)
+			//dialogs.alert("已经对比完成，结果已在剪切板")
+			  		alert("比较完成");
+  	}
+  	
+  	</script>
+	
+	<body>
+		
+			<textarea id="inputtext" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 500px;padding: 10px;resize: none;" placeholder="已经接龙信息"）"></textarea>
+<button styple =“height:100px” onclick="go()">开始对比</button>
+结果
+<textarea id="outputtext" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 500px;padding: 10px;resize: none;" placeholder="结果显示接龙"></textarea>
+
+		</body>
+	</html>

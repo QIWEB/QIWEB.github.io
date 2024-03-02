@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+		</head>
+  <script type="text/javascript">		
+  	AA=[
+    'TQW69-B2NQR-G7FMR-63VHB-R626G',
+    '343VG-DTQFQ-2C68X-XCJFR-9H7DX',
+    'D2TP7-C9B9G-YKP9J-XPBV2-X47BG',
+    'FCKWK-D4RKB-QV4B4-C84MC-38GPJ',
+    'W269N-WFGWX-YVC9B-4J6C9-T83GX',
+       'P7N43-7CKCH-8DJ7T-3Y6RV-G6PJR',
+       'P9C2R-NM3BW-JR7DG-2R38J-D9MPF',
+       'KH2J9-PC326-T44D4-39H6V-TVPBY',
+       'TFP9Y-VCY3P-VVpT-8XXCC-MF4YK ',
+       '236TW-X778T-8MV9F-937GT-QVKBB',
+       '87VT2-FY2XW-F7K39-W3T8R-XMFGF',
+       '6K2KY-BFH24-PJW6W-9GK29-TMPWP',
+       'RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289',
+       'C4M9W-WPRDG-QBB3F-VM9K8-KDQ9Y',
+       '2VCGQ-pVJ45-2HGJ2-K36X9-J66JG',
+       'MGX79-TPQB9-KQ248-KXR2V-DHRTD',
+       'FJHWT-KDGHY-K2384-93CT7-323RC',
+       '6K2KY-BFH24-PJW6W-9GK29-TMPWP',
+       'KH2J9-PC326-T44D4-39H6V-TVPBY',
+       'TFP9Y-VCY3P-VVH3T-8XXCC-MF4YK',
+       '236TW-X778T-8MV9F-937GT-QVKBB',
+       '87VT2-FY2XW-F7K39-W3T8R-XMFGF',
+       'J783Y-JKQWR-677Q8-KCXTF-BHWGC',
+       'NPPR9-FWDCX-D2C8J-H872K-2YT43',
+       'NPPR9-FWDCX-D2C8J-H872K-2YT43',
+       'WGGHN-J84D6-QYCPR-T7PJ7-X766F',
+       'W269N-WFGWX-YVC9B-4J6C9-T83GX',
+       '2F77B-TNFGY-69QQF-B8YKP-D69TJ',
+       'NYW94-47Q7H-7X9TT-W7TXD-JTYPM',
+       '2B87N-8KFHP-DKV6R-Y2C8J-PKCKT',
+       'NJ4MX-VQQ7Q-FP3DB-VDGHX-7XM87',
+       'MH37W-N47XK-V7XM9-C7227-GCQG9',
+       'WNMTR-4C88C-JK8YV-HQ7T2-76DF9',
+       'VK7JG-NPHTM-C97JM-9MPGT-3V66T',
+       'DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4',
+    'HV6Y9-Y3R7J-YYHB2-B9DM2-J23J9'
+];
+
+
+var office_type_list=[" 家庭版 "," 学生版 "," 专业版 "," 专业增强版 "];
+var win_list=["windows 7 ","windows 8.1 ","windows 10 ","windows 11 "];
+var tpye_list=[" 家庭版  "," 专业版 "," 企业版 "];
+
+var office_list=["office 2013 ","office 2016 ","office 2019 ","office 2021 ","office 365 "];
+var product_list=[" 激活码 ："," 产品密钥： " ," 激活序列号： "];
+	
+	function getNowTime () {
+	  let now = new Date();
+	  let year = now.getFullYear(); //获取完整的年份(4位,1970-????)
+	  let month = now.getMonth() + 1; //获取当前月份(0-11,0代表1月)
+	  let today = now.getDate(); //获取当前日(1-31)
+	  let hour = now.getHours(); //获取当前小时数(0-23)
+	  let minute = now.getMinutes(); //获取当前分钟数(0-59)
+	  let second = now.getSeconds(); //获取当前秒数(0-59)
+	  let nowTime = ''
+	  nowTime = year + '-' + fillZero(month) + '-' + fillZero(today) + ' ' + fillZero(hour) + ':' +
+		fillZero(minute) + ':' + fillZero(second)
+	  return nowTime
+	};
+
+	function fillZero (str) {
+	  var realNum;
+	  if (str < 10) {
+		realNum = '0' + str;
+	  } else {
+		realNum = str;
+	  }
+	  return realNum;
+	}
+	console.log(getNowTime());
+
+	//从数组随机取一个
+	function editArray(arr){
+	
+		var i =Math.floor((Math.random()*arr.length));
+		return arr[i];
+	}
+
+	
+	//生成从minNum到maxNum的随机数
+	function randomNum(minNum,maxNum){ 
+		switch(arguments.length){ 
+			case 1: 
+				return parseInt(Math.random()*minNum+1,10); 
+			break; 
+			case 2: 
+				return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+			break; 
+				default: 
+					return 0; 
+				break; 
+		} 
+	} 
+	
+	function getKey(){
+		var result="";
+		
+		for(var m=0;m<5;m++){
+			var x=randomNum(0,AA.length-1)
+				//console.log(x+"=="+m);
+
+			result+=AA[x].split("-")[m]
+			if(m!=4){
+				result+="-"
+			}
+		}
+		return result;
+	
+	}
+	
+	console.log(getKey());
+	
+	
+	
+	for(var  y=0;y<30;y++){
+		if (y % 5==0){
+			var tt=editArray(win_list)+editArray(tpye_list)+editArray(product_list)
+			//	print(random.sample(win_list,1)[0],random.sample(tpye_list,1)[0],random.sample(product_list,1)[0])
+			//	print(f"检测时间：{printTime()}")
+			console.log(tt)
+			console.log("检测时间："+getNowTime())
+				
+			
+		
+		}
+		
+		console.log(getKey());
+		//print(getKey())
+	
+	} 
+	
+
+	
+	
+
+	
+	
+  	function go(){
+		var vluesxxxx="";
+		for(var  y=0;y<30;y++){
+		
+			if (y % 5==0){
+				var tt=editArray(win_list)+editArray(tpye_list)+editArray(product_list)
+				//	print(random.sample(win_list,1)[0],random.sample(tpye_list,1)[0],random.sample(product_list,1)[0])
+				//	print(f"检测时间：{printTime()}")
+				console.log(tt)
+				var tim="检测时间："+getNowTime()
+				console.log(tim)
+					
+				vluesxxxx+=tt+"\n"+tim+"\n";
+			
+			}
+		var key=getKey();
+		vluesxxxx+=key+"\n";
+		console.log(key);
+		//print(getKey())
+	
+	} 
+	
+		for(var  y=0;y<20;y++){
+		if (y % 5==0){
+			var tt=editArray(office_list)+editArray(tpye_list)+editArray(product_list)
+				//print(random.sample(win_list,1)[0],random.sample(tpye_list,1)[0],random.sample(product_list,1)[0])
+			//	print(f"检测时间：{printTime()}")
+			console.log(tt)
+				var tim="检测时间："+getNowTime()
+				console.log(tim)
+					
+				vluesxxxx+=tt+"\n"+tim+"\n";
+				
+			
+		
+		}
+		var key=getKey();
+		vluesxxxx+=key+"\n";
+		console.log(key);
+		
+		//print(getKey())
+	
+	} 
+	
+	
+	
+	
+	
+			
+			document.getElementById("outputtext").value=vluesxxxx;
+			//setClip(resp)
+			//dialogs.alert("已经对比完成，结果已在剪切板")
+			  		alert("创建完成");
+  	}
+  	
+  	</script>
+	
+	<body>
+		
+			<textarea id="inputtext" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 500px;padding: 10px;resize: none;" placeholder="已经接龙信息"）">
+			
+			
+猛戳上方蓝字关注『QIWEB网络共享科技』，获取更多软件干货&教程！永久激活码密钥
+
+重点脚本在文末
+
+office2013  2016 2019 2021 office365都有都有，就是数量有限，先到先得
+
+密钥:NDY3T-HKY6R-HHTPD-M7KJG-BP33D
+
+
+office是微软开发地办公软件套装，里面包含多种软件，实现不同功能
+
+
+可以咨询小编微信号qiweb3  备注密钥
+
+因为密钥激活需要联系，而且一码激活一台，所以先到先得，
+
+
+
+长按下图二维码识别加管理微信进福利群
+
+若发现过期，或者跟你系统版本不匹配可以关注本公众号，回复5免费获取激活码
+
+
+
+本公众号为Windows与Office激活密钥专属公益发布站！
+
+（注：偶尔有其他软件产品的激活码）
+
+office2013  2016 2019 2021 office365都有都有，就是数量有限，先到先得
+
+win10专业版企业版
+
+
+每一个激活码都是有次数限制的，所以“手快有、手慢无！”。
+
+
+可以咨询小编微信号qiweb3
+
+我们只关注与office和Windows有关资讯,
+
+以及电脑系统办公技巧。
+
+你的关注是对我最大支持也是我更新的动力
+
+点击上方“关注”按钮即可关注QIWBE共享科技
+
+喜欢记得点击“在看”支持一下哟，谢谢大家！
+
+
+
+			
+			</textarea>
+<button styple =“height:100px” onclick="go()">开始生成 </button>
+结果
+<textarea id="outputtext" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 500px;padding: 10px;resize: none;" placeholder="结果显示接龙"></textarea>
+
+		</body>
+	</html>

@@ -1,0 +1,166 @@
+<div id="content">
+<script language="JavaScript">
+function utf16to8(str) {
+var out, i, len, c;
+out = "";
+len = str.length;
+for(i = 0; i < len; i++) {
+c = str.charCodeAt(i);
+if ((c >= 0x0001) && (c <= 0x007F)) {
+out += str.charAt(i);
+} else if (c > 0x07FF) {
+out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+} else {
+out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+}
+}
+return out;
+}
+function utf8to16(str) {
+var out, i, len, c;
+var char2, char3;
+out = "";
+len = str.length;
+i = 0;
+while(i < len) {
+c = str.charCodeAt(i++);
+switch(c >> 4) {
+case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7:
+// 0xxxxxxx
+out += str.charAt(i-1);
+break;
+case 12: case 13:
+// 110x xxxx 10xx xxxx
+char2 = str.charCodeAt(i++);
+out += String.fromCharCode(((c & 0x1F) << 6) | (char2 & 0x3F));
+break;
+case 14:
+// 1110 xxxx 10xx xxxx 10xx xxxx
+char2 = str.charCodeAt(i++);
+char3 = str.charCodeAt(i++);
+out += String.fromCharCode(((c & 0x0F) << 12) |
+((char2 & 0x3F) << 6) |
+((char3 & 0x3F) << 0));
+break;
+}
+}
+return out;
+}
+
+</script>
+
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="CommonListArea">
+
+<tbody><tr class="CommonListTitle">
+      <td height="30" align="center">&nbsp;在线聊天内容加密工具</td>
+  </tr>
+<tr class="CommonListCell">
+  <td height="30" align="center"></td>
+</tr>
+
+ <tr class="CommonListCell">
+   <td><!---->
+<script language="JavaScript">
+function encrypt(str, pwd) {
+  if(pwd == null || pwd.length <= 0) {
+    alert("请设置暗号和输入预加密内容.");
+    return null;
+  }
+  var prand = "";
+  for(var i=0; i<pwd.length; i++) {
+    prand += pwd.charCodeAt(i).toString();
+  }
+  var sPos = Math.floor(prand.length / 5);
+  var mult = parseInt(prand.charAt(sPos) + prand.charAt(sPos*2) + prand.charAt(sPos*3) + prand.charAt(sPos*4) + prand.charAt(sPos*5));
+  var incr = Math.ceil(pwd.length / 2);
+  var modu = Math.pow(2, 31) - 1;
+  if(mult < 2) {
+    alert("Algorithm cannot find a suitable hash. Please choose a different password. \nPossible considerations are to choose a more complex or longer password.");
+    return null;
+  }
+  var salt = Math.round(Math.random() * 1000000000) % 100000000;
+  prand += salt;
+  while(prand.length > 10) {
+    prand = (parseInt(prand.substring(0, 10)) + parseInt(prand.substring(10, prand.length))).toString();
+  }
+  prand = (mult * prand + incr) % modu;
+  var enc_chr = "";
+  var enc_str = "";
+  for(var i=0; i<str.length; i++) {
+    enc_chr = parseInt(str.charCodeAt(i) ^ Math.floor((prand / modu) * 255));
+    if(enc_chr < 16) {
+      enc_str += "0" + enc_chr.toString(16);
+    } else enc_str += enc_chr.toString(16);
+    prand = (mult * prand + incr) % modu;
+  }
+  salt = salt.toString(16);
+  while(salt.length < 8)salt = "0" + salt;
+  enc_str += salt;
+  return enc_str;
+}
+
+function decrypt(str, pwd) {
+  if(str == null || str.length < 8) {
+    alert("暗号不能超过8位数.");
+    return;
+  }
+  if(pwd == null || pwd.length <= 0) {
+    alert("暗号不能为空.");
+    return;
+  }
+  var prand = "";
+  for(var i=0; i<pwd.length; i++) {
+    prand += pwd.charCodeAt(i).toString();
+  }
+  var sPos = Math.floor(prand.length / 5);
+  var mult = parseInt(prand.charAt(sPos) + prand.charAt(sPos*2) + prand.charAt(sPos*3) + prand.charAt(sPos*4) + prand.charAt(sPos*5));
+  var incr = Math.round(pwd.length / 2);
+  var modu = Math.pow(2, 31) - 1;
+  var salt = parseInt(str.substring(str.length - 8, str.length), 16);
+  str = str.substring(0, str.length - 8);
+  prand += salt;
+  while(prand.length > 10) {
+    prand = (parseInt(prand.substring(0, 10)) + parseInt(prand.substring(10, prand.length))).toString();
+  }
+  prand = (mult * prand + incr) % modu;
+  var enc_chr = "";
+  var enc_str = "";
+  for(var i=0; i<str.length; i+=2) {
+    enc_chr = parseInt(parseInt(str.substring(i, i+2), 16) ^ Math.floor((prand / modu) * 255));
+    enc_str += String.fromCharCode(enc_chr);
+    prand = (mult * prand + incr) % modu;
+  }
+  return enc_str;
+}
+//  End -->
+
+
+</script>
+
+      <form name="box">
+      <center>
+      <table width="500" border="1" align="center" cellpadding="3" cellspacing="1">
+        <tbody><tr>
+          <td colspan="3" align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><textarea name="ipt" rows="5" wrap="virtual" cols="50" style="margin: 0px; width: 484px; height: 92px;">你好 Welcome to ！</textarea>          </td></tr>
+        <tr height="50">
+          <td align="center"><input onclick="document.box.opt.value= encrypt(utf16to8(document.box.ipt.value), document.box.pwd.value);" type="button" value="加密">          </td>
+          <td valign="center" align="center">暗号：<input value="123456" name="pwd"> </td>
+          <td align="center"><input onclick="document.box.ipt.value= utf8to16(decrypt(document.box.opt.value, document.box.pwd.value));" type="button" value="解密">          </td></tr>
+        <tr>
+  <td colspan="3" align="center"><textarea name="opt" rows="5" wrap="virtual" cols="50" style="margin: 0px; width: 482px; height: 179px;"></textarea>  </td></tr></tbody></table></center></form><!----></td>
+ </tr>
+</tbody></table>
+
+
+  
+
+
+
+
+</div>
