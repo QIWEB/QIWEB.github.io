@@ -16,12 +16,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2d7lUT9IkX0GXhsu7G8rATkBzfw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -73,6 +76,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="主页更新" />
     <MESSAGE value="网页加密，书签，激活码生成，直播，人员接龙html js等" />
     <option name="LAST_COMMIT_MESSAGE" value="网页加密，书签，激活码生成，直播，人员接龙html js等" />
